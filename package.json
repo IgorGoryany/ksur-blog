@@ -1,0 +1,43 @@
+{
+  "name": "ksur-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint-ts": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.456.0",
+    "next": "14.2.17",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@siberiacancode/eslint": "^2.3.0",
+    "@siberiacancode/prettier": "^1.1.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9.14.0",
+    "eslint-config-next": "^15.0.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "npx tsc --noEmit",
+    "*.{js,jsx,ts,tsx,mjs}": "npx eslint . --quiet --fix",
+    "*.css": "npx prettier --check"
+  }
+}
