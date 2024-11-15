@@ -14,6 +14,7 @@ export default eslint(
     files: ['**/src/**/*.ts', '**/src/**/*.tsx'],
     rules: {
       'style/jsx-quotes': ['error', 'prefer-double'],
+      'perfectionist/sort-imports': 'off',
     },
 
   },
@@ -32,9 +33,9 @@ export default eslint(
       'style/comma-dangle': ['error', {
         'arrays': 'only-multiline',
         'objects': 'only-multiline',
-        'imports': 'never',
-        'exports': 'never',
-        'functions': 'never',
+        'imports': 'only-multiline',
+        'exports': 'only-multiline',
+        'functions': 'only-multiline',
       }],
     },
   }
